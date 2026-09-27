@@ -16,7 +16,7 @@ export default function TermsPage() {
         <p>
           KOSH is an online marketplace operated by {SITE.legalName} (&ldquo;KOSH&rdquo;,
           &ldquo;we&rdquo;, &ldquo;us&rdquo;) that connects buyers with independent local vendors —
-          home bakeries, food makers, service providers, and stores — in {SITE.region}. KOSH
+          home bakeries, food makers, service providers, and stores. KOSH
           provides the platform only. Vendors are independent businesses and are not employees or
           agents of KOSH, and KOSH is not the seller of any product or service listed.
         </p>

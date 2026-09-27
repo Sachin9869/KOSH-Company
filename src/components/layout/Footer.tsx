@@ -22,7 +22,6 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <KoshLogo variant="white" size={24} />
             <p className="mt-4 text-body-sm text-white/60">{SITE.tagline}</p>
-            <p className="mt-1 text-[13px] text-white/40">{SITE.region}</p>
 
             <ul className="mt-6 flex items-center gap-3">
               {SOCIAL_LINKS.map((social) => (
