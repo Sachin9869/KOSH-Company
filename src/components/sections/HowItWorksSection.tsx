@@ -33,7 +33,7 @@ export function HowItWorksSection() {
       <div
         role="tablist"
         aria-label="Choose your journey"
-        className="mx-auto mt-9 flex w-fit items-center gap-1 rounded-full border border-hairline bg-slate-100 p-1"
+        className="mx-auto mt-9 flex w-fit items-center gap-1 rounded-full border border-hairline bg-sand p-1"
       >
         {TABS.map((tab) => {
           const active = audience === tab.id;
@@ -48,7 +48,11 @@ export function HowItWorksSection() {
               onClick={() => setAudience(tab.id)}
               className={cn(
                 'relative h-10 rounded-full px-5 text-nav transition-colors duration-200',
-                active ? 'text-white' : 'text-ink-secondary hover:text-ink',
+                active
+                  ? tab.id === 'vendor'
+                    ? 'text-surface-dark'
+                    : 'text-white'
+                  : 'text-ink-secondary hover:text-ink',
               )}
             >
               {active && (
@@ -89,8 +93,8 @@ export function HowItWorksSection() {
               className={cn(
                 'h-px w-full',
                 isVendor
-                  ? 'bg-[repeating-linear-gradient(to_right,#F97316_0_8px,transparent_8px_16px)] opacity-40'
-                  : 'bg-[repeating-linear-gradient(to_right,#1E3A8A_0_8px,transparent_8px_16px)] opacity-30',
+                  ? 'bg-[repeating-linear-gradient(to_right,#86B84A_0_8px,transparent_8px_16px)] opacity-40'
+                  : 'bg-[repeating-linear-gradient(to_right,#173A2B_0_8px,transparent_8px_16px)] opacity-30',
               )}
             />
           </div>

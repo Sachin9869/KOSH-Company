@@ -4,6 +4,8 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { ProblemSection } from '@/components/sections/ProblemSection';
 import { HowItWorksSection } from '@/components/sections/HowItWorksSection';
 import { FeaturesSection } from '@/components/sections/FeaturesSection';
+import { NearbySection } from '@/components/sections/NearbySection';
+import { AppScreensSection } from '@/components/sections/AppScreensSection';
 import { CentralizedSection } from '@/components/sections/CentralizedSection';
 import { VendorSection } from '@/components/sections/VendorSection';
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
@@ -25,10 +27,12 @@ export default function HomePage() {
 
       <main id="main">
         <HeroSection />
+        <NearbySection />
         <ProblemSection />
         <HowItWorksSection />
         <FeaturesSection />
         <CentralizedSection />
+        <AppScreensSection />
         <VendorSection />
         <TestimonialsSection />
         <CommunitySection />

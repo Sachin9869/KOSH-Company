@@ -67,7 +67,7 @@ export function DownloadSection() {
             />
             <div className="relative motion-safe:animate-float">
               <PhoneMockup
-                screen="order"
+                screen="buyer-store"
                 width={272}
                 shadow="elevated"
                 style={{ transform: 'perspective(1400px) rotateY(-11deg) rotateX(3deg)' }}

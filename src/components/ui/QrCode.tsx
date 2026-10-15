@@ -54,7 +54,7 @@ export function QrCode({ size = 100, className }: { size?: number; className?: s
         <g key={`${x}-${y}`}>
           <rect x={x} y={y} width="7" height="7" fill="#0F172A" />
           <rect x={x + 1} y={y + 1} width="5" height="5" fill="#fff" />
-          <rect x={x + 2} y={y + 2} width="3" height="3" fill="#1E3A8A" />
+          <rect x={x + 2} y={y + 2} width="3" height="3" fill="#173A2B" />
         </g>
       ))}
     </svg>

@@ -1,14 +1,15 @@
 import type { Metadata, Viewport } from 'next';
-import { Poppins } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
 import { siteMetadata } from '@/lib/metadata';
 import './globals.css';
 
-const poppins = Poppins({
+// DM Sans, as in both apps.
+const dmSans = DM_Sans({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'],
-  variable: '--font-poppins',
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-dm-sans',
   display: 'swap',
   // Headline + button weights are on the critical render path.
   preload: true,
@@ -19,8 +20,8 @@ export const metadata: Metadata = siteMetadata;
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#1E3A8A' },
-    { media: '(prefers-color-scheme: dark)', color: '#0F172A' },
+    { media: '(prefers-color-scheme: light)', color: '#173A2B' },
+    { media: '(prefers-color-scheme: dark)', color: '#10291E' },
   ],
   width: 'device-width',
   initialScale: 1,
@@ -32,7 +33,7 @@ const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-CA" className={poppins.variable}>
+    <html lang="en-CA" className={dmSans.variable}>
       <body className="font-poppins antialiased">
         {/* GTM bootstrap. Only injected when a container ID is configured. */}
         {GTM_ID && (

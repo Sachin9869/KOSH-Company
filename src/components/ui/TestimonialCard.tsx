@@ -1,4 +1,3 @@
-import { Star } from 'lucide-react';
 import type { Testimonial } from '@/lib/constants';
 
 function initials(name: string) {
@@ -13,11 +12,10 @@ function initials(name: string) {
 export function TestimonialCard({ quote, name, role, city }: Testimonial) {
   return (
     <figure className="flex w-[19rem] shrink-0 flex-col justify-between rounded-card border border-hairline bg-white p-5 shadow-card">
-      <div className="flex gap-0.5" aria-label="Rated 5 out of 5">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <Star key={i} className="h-3.5 w-3.5 fill-orange text-orange" aria-hidden="true" />
-        ))}
-      </div>
+      {/* Pre-launch: these are illustrative, not real reviews. */}
+      <span className="w-fit rounded-full bg-sand px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-ink-secondary">
+        Example
+      </span>
 
       <blockquote className="mt-3 text-body-sm italic leading-relaxed text-ink">
         “{quote}”

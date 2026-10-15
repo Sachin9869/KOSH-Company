@@ -146,14 +146,107 @@ export const FEATURES: readonly Feature[] = [
   },
 ];
 
-/* ─── Section 6 — app screens ──────────────────────────────────────────────── */
+/* ─── Popular near you — real listings from the app ────────────────────────── */
 
-export const APP_SCREENS = [
-  { id: 'home', label: 'Discover' },
-  { id: 'search', label: 'Search results' },
-  { id: 'store', label: 'Vendor store' },
-  { id: 'product', label: 'Product + AI summary' },
-  { id: 'order', label: 'Order tracking' },
+export const NEARBY_LISTINGS = [
+  {
+    title: 'Sourdough Boule',
+    seller: "Amara's Bakehouse",
+    city: 'Ajax',
+    price: '$8',
+    tag: 'Home baker',
+    image: 'sourdough',
+    alt: 'A scored sourdough loaf on a wooden board',
+  },
+  {
+    title: 'Jollof Rice Party Tray',
+    seller: 'Mama Africa Kitchen',
+    city: 'Toronto',
+    price: '$65',
+    rating: '5.0',
+    tag: 'Catering',
+    image: 'jollof',
+    alt: 'A tray of jollof rice',
+  },
+  {
+    title: 'Wildflower Honey',
+    seller: 'Bee Good Farm',
+    city: 'Ajax',
+    price: '$14',
+    tag: 'Farm',
+    image: 'honey',
+    alt: 'A jar of golden wildflower honey',
+  },
+  {
+    title: 'Mango Pickle',
+    seller: 'Maa Ki Dukaan',
+    city: 'Brampton',
+    price: '$12',
+    rating: '5.0',
+    tag: 'Grocery',
+    image: 'spices',
+    alt: 'A market stall of colourful spices',
+  },
+  {
+    title: 'Lawn & Yard Cleanup',
+    seller: 'Green Edge Lawn Care',
+    city: 'Pickering',
+    price: 'from $60',
+    tag: 'Service',
+    image: 'lawn',
+    alt: 'A red rake on a pile of autumn leaves',
+  },
+  {
+    title: 'Electrical Panel Upgrade',
+    seller: 'Raj Electrical Services',
+    city: 'Brampton',
+    price: 'from $1,800',
+    rating: '4.9',
+    tag: 'Trades',
+    image: 'panel',
+    alt: 'An electrician testing a breaker panel',
+  },
+  {
+    title: '2BR Basement Suite',
+    seller: 'Private landlord',
+    city: 'Brampton',
+    price: '$1,850/mo',
+    tag: 'Rental',
+    image: 'basement',
+    alt: 'A bright living room with a green sofa',
+  },
+  {
+    title: 'Saturday Garage Sale',
+    seller: 'Kids bikes and toys',
+    city: 'Ajax',
+    price: '$40',
+    tag: 'Yard sale',
+    image: 'garage',
+    alt: 'A table of second-hand books at a yard sale',
+  },
+] as const;
+
+/* ─── Who sells on KOSH ────────────────────────────────────────────────────── */
+
+export const VENDOR_PEOPLE = [
+  {
+    label: 'Home bakers',
+    line: 'Sell the morning bake before it cools.',
+    image: 'baker',
+    alt: 'A baker shaping rolls of dough on a floured counter',
+  },
+  {
+    label: 'Shops and cafés',
+    line: 'Your counter, open to the whole neighbourhood.',
+    image: 'owner-cafe',
+    alt: 'A smiling café owner standing behind her counter',
+  },
+  {
+    label: 'Tradespeople',
+    line: 'Fill your week with jobs from nearby.',
+    image: 'trades',
+    alt: 'A carpenter cutting a board on a mitre saw',
+  },
 ] as const;
 
 /* ─── Section 7 — vendor benefits ──────────────────────────────────────────── */
@@ -183,6 +276,8 @@ export const VENDOR_BENEFITS: ReadonlyArray<{
 ];
 
 /* ─── Section 8 — testimonials ─────────────────────────────────────────────── */
+// Illustrative examples, not real customers — KOSH is pre-launch. The section
+// labels them as examples; replace with real reviews after launch.
 
 export type Testimonial = {
   quote: string;

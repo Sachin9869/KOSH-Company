@@ -4,7 +4,7 @@
   "description": "The local marketplace built for your neighbourhood.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F8FAFC",
-  "theme_color": "#1E3A8A",
-  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+  "background_color": "#FBF8F1",
+  "theme_color": "#173A2B",
+  "icons": [{ "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }]
 }

@@ -28,7 +28,7 @@ export function ProblemSection() {
             variants={fadeUp}
             className="group rounded-card border border-hairline bg-white p-7 shadow-card transition-[transform,box-shadow] duration-300 ease-out-expo hover:-translate-y-1 hover:shadow-card-hover"
           >
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-100 text-ink-muted transition-colors duration-300 group-hover:bg-orange-tint group-hover:text-orange-ink">
+            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-sand text-ink-muted transition-colors duration-300 group-hover:bg-orange-tint group-hover:text-orange-ink">
               <Icon name={problem.icon} className="h-6 w-6" />
             </span>
             <h3 className="mt-5 text-h4 text-ink">{problem.title}</h3>

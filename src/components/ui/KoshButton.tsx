@@ -7,7 +7,8 @@ type Size = 'sm' | 'md' | 'lg';
 
 const VARIANTS: Record<Variant, string> = {
   navy: 'bg-navy text-white shadow-cta hover:bg-navy-dark',
-  orange: 'bg-orange text-white shadow-cta-orange hover:bg-orange-dark hover:shadow-cta-orange-lg',
+  // Lime, as in the vendor app — always with ink text (white fails contrast).
+  orange: 'bg-orange text-surface-dark shadow-cta-orange hover:bg-orange-dark hover:shadow-cta-orange-lg',
   white: 'bg-white text-navy shadow-cta hover:shadow-elevated',
   outline: 'border border-navy/25 bg-white text-navy hover:border-navy hover:bg-navy/5',
   'ghost-light':

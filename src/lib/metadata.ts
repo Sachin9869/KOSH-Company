@@ -57,7 +57,7 @@ export const siteMetadata: Metadata = {
       'max-video-preview': -1,
     },
   },
-  // Favicon + apple-touch icon come from src/app/icon.svg and apple-icon.tsx.
+  // Favicon + apple-touch icon come from src/app/icon.png and apple-icon.png (the app icon).
   manifest: '/site.webmanifest',
   formatDetection: { telephone: false },
 };
@@ -75,11 +75,6 @@ export const jsonLd = {
       applicationCategory: 'ShoppingApplication',
       operatingSystem: 'iOS, Android',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'CAD' },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.8',
-        ratingCount: '1200',
-      },
       publisher: { '@id': `${SITE.url}/#organization` },
     },
     {

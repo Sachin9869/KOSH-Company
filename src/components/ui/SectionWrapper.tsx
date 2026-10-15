@@ -69,7 +69,8 @@ export function SectionHeading({
         <p
           className={cn(
             'section-eyebrow mb-3',
-            eyebrowTone === 'orange' ? 'text-orange' : 'text-blue-brand',
+            // Lime only reads on dark sections; on light ones the accent is green.
+            eyebrowTone === 'orange' && tone === 'dark' ? 'text-orange' : 'text-blue-brand',
           )}
         >
           {eyebrow}

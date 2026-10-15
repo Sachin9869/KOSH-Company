@@ -12,8 +12,8 @@ const BADGE_BASE =
 
 function themeClasses(theme: 'dark' | 'light') {
   return theme === 'dark'
-    ? 'bg-ink text-white ring-1 ring-white/10 hover:bg-slate-800'
-    : 'bg-white text-ink ring-1 ring-black/5 hover:bg-slate-50';
+    ? 'bg-ink text-white ring-1 ring-white/10 hover:bg-navy-dark'
+    : 'bg-white text-ink ring-1 ring-black/5 hover:bg-surface-page';
 }
 
 export function AppStoreBadge({ className, theme = 'dark' }: BadgeProps) {

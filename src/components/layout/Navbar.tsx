@@ -46,7 +46,7 @@ export function Navbar() {
         className={cn(
           'fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,border-color] duration-200',
           scrolled
-            ? 'border-b border-hairline bg-white/95 shadow-[0_1px_20px_rgba(15,23,42,0.06)] backdrop-blur-md'
+            ? 'border-b border-hairline bg-white/95 shadow-[0_1px_20px_rgba(23,58,43,0.06)] backdrop-blur-md'
             : 'border-b border-transparent bg-transparent',
         )}
       >
@@ -136,7 +136,7 @@ export function Navbar() {
                 <button
                   type="button"
                   onClick={() => setOpen(false)}
-                  className="flex h-11 w-11 items-center justify-center rounded-lg text-ink-secondary hover:bg-slate-100"
+                  className="flex h-11 w-11 items-center justify-center rounded-lg text-ink-secondary hover:bg-sand"
                   aria-label="Close menu"
                   autoFocus
                 >
@@ -150,7 +150,7 @@ export function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setOpen(false)}
-                      className="block rounded-lg px-4 py-3.5 text-base font-medium text-ink transition-colors hover:bg-slate-50 hover:text-navy"
+                      className="block rounded-lg px-4 py-3.5 text-base font-medium text-ink transition-colors hover:bg-surface-page hover:text-navy"
                     >
                       {link.label}
                     </Link>
