@@ -3,6 +3,9 @@ import { TestimonialCard } from '@/components/ui/TestimonialCard';
 import { TESTIMONIALS } from '@/lib/constants';
 
 /**
+ * Example stories — KOSH is pre-launch, so these are illustrative, and the
+ * heading and every card say so. Swap in real reviews once there are some.
+ *
  * Two counter-scrolling rows. The animation is pure CSS (transform only) so it
  * runs on the compositor and adds no JS to the bundle; hovering either row
  * pauses it via `animation-play-state`.
@@ -21,9 +24,9 @@ export function TestimonialsSection() {
       <div className="kosh-container">
         <SectionHeading
           id="testimonials-heading"
-          eyebrow="Real neighbours"
-          title="Loved by local vendors and buyers"
-          subtitle="From Pickering to Hamilton — here's what happens when your neighbourhood gets a proper marketplace."
+          eyebrow="Example stories"
+          title="Made for local vendors and buyers"
+          subtitle="KOSH hasn't launched yet, so these are illustrative examples of what it's built to do — not reviews from real customers."
         />
       </div>
 

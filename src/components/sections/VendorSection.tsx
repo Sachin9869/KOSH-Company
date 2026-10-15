@@ -1,11 +1,12 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { SectionWrapper } from '@/components/ui/SectionWrapper';
 import { KoshButtonLink } from '@/components/ui/KoshButton';
 import { Icon } from '@/components/ui/Icon';
-import { VENDOR_BENEFITS } from '@/lib/constants';
+import { VENDOR_BENEFITS, VENDOR_PEOPLE } from '@/lib/constants';
 import { VIEWPORT, fadeUp, staggerContainer } from '@/lib/motion';
 
 export function VendorSection() {
@@ -45,12 +46,41 @@ export function VendorSection() {
           </p>
         </motion.div>
 
+        {/* The people KOSH is for. */}
         <motion.ul
           initial="hidden"
           whileInView="visible"
           viewport={VIEWPORT}
           variants={staggerContainer}
-          className="mx-auto mt-14 grid max-w-5xl gap-5 md:grid-cols-3"
+          className="mx-auto mt-14 grid max-w-5xl gap-5 sm:grid-cols-3"
+        >
+          {VENDOR_PEOPLE.map((person) => (
+            <motion.li
+              key={person.label}
+              variants={fadeUp}
+              className="relative aspect-[4/3] overflow-hidden rounded-card sm:aspect-[3/4] md:aspect-[4/5]"
+            >
+              <Image
+                src={`/images/${person.image}.webp`}
+                alt={person.alt}
+                fill
+                sizes="(min-width: 640px) 33vw, 100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-surface-dark/90 via-surface-dark/40 to-transparent p-5 pt-16">
+                <p className="text-label uppercase text-orange">{person.label}</p>
+                <p className="mt-1 text-body-sm text-white/85">{person.line}</p>
+              </div>
+            </motion.li>
+          ))}
+        </motion.ul>
+
+        <motion.ul
+          initial="hidden"
+          whileInView="visible"
+          viewport={VIEWPORT}
+          variants={staggerContainer}
+          className="mx-auto mt-5 grid max-w-5xl gap-5 md:grid-cols-3"
         >
           {VENDOR_BENEFITS.map((benefit) => (
             <motion.li
@@ -72,7 +102,7 @@ export function VendorSection() {
               </div>
 
               <h3 className="mt-5 text-h4 text-white">{benefit.title}</h3>
-              <p className="mt-2 text-body text-[#94A3B8]">{benefit.body}</p>
+              <p className="mt-2 text-body text-white/65">{benefit.body}</p>
             </motion.li>
           ))}
         </motion.ul>

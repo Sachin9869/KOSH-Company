@@ -14,40 +14,54 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['var(--font-poppins)', 'Poppins', 'system-ui', 'sans-serif'],
-        sans: ['var(--font-poppins)', 'Poppins', 'system-ui', 'sans-serif'],
+        poppins: ['var(--font-dm-sans)', 'DM Sans', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-dm-sans)', 'DM Sans', 'system-ui', 'sans-serif'],
       },
+      /*
+       * The apps' palette. Token names are kept from the first site so every
+       * section picks the new colours up unchanged: `navy` is now the buyer
+       * app's forest green, `orange` the vendor app's lime (always with ink
+       * text on top), and `blue` the action green.
+       */
       colors: {
         navy: {
-          DEFAULT: '#1E3A8A',
-          dark: '#162D6E',
-          light: '#1D4ED8',
-          soft: '#2E4FA8',
+          DEFAULT: '#173A2B',
+          dark: '#10291E',
+          light: '#286447',
+          soft: '#22503A',
         },
         blue: {
-          brand: '#3B82F6',
-          tint: '#EFF6FF',
+          brand: '#286447',
+          tint: '#EAF3EC',
         },
         orange: {
-          DEFAULT: '#F97316',
-          dark: '#EA6C0A',
-          /** Accessible orange for text/icons on light surfaces (5.1:1 on white). */
-          ink: '#C2410C',
-          tint: '#FFF7ED',
+          DEFAULT: '#B6E36D',
+          dark: '#A3D45A',
+          /** Green for accent text and icons on light surfaces (6.9:1 on cream). */
+          ink: '#286447',
+          tint: '#EEF6DF',
         },
+        apricot: {
+          DEFAULT: '#F28C52',
+          tint: '#FDEBDF',
+        },
+        mint: '#E2EFE5',
+        sage: '#E5ECDE',
+        /** Warm light fill for inputs, chips and toggles — the apps' surfaceVariant. */
+        sand: '#F2EEE5',
         surface: {
           DEFAULT: '#FFFFFF',
-          page: '#F8FAFC',
-          dark: '#0F172A',
-          'dark-raised': '#1E293B',
-          'dark-border': '#334155',
+          page: '#FBF8F1',
+          dark: '#202923',
+          'dark-raised': '#2A352E',
+          'dark-border': '#3A463E',
         },
         ink: {
-          DEFAULT: '#0F172A',
-          secondary: '#64748B',
-          muted: '#94A3B8',
+          DEFAULT: '#173A2B',
+          secondary: '#5F6C65',
+          muted: '#8E9A93',
         },
-        hairline: '#E2E8F0',
+        hairline: '#ECE7DC',
       },
       fontSize: {
         display: ['3.5rem', { lineHeight: '1.05', letterSpacing: '-0.0268em', fontWeight: '800' }],
@@ -74,19 +88,19 @@ const config: Config = {
         panel: '1.25rem',
       },
       boxShadow: {
-        card: '0 1px 4px rgba(15,23,42,0.06)',
-        'card-hover': '0 18px 40px -18px rgba(15,23,42,0.28)',
-        elevated: '0 24px 60px -24px rgba(15,23,42,0.35)',
+        card: '0 1px 4px rgba(23,58,43,0.06)',
+        'card-hover': '0 18px 40px -18px rgba(23,58,43,0.28)',
+        elevated: '0 24px 60px -24px rgba(23,58,43,0.35)',
         cta: '0 4px 20px rgba(0,0,0,0.15)',
-        'cta-orange': '0 4px 20px rgba(249,115,22,0.4)',
-        'cta-orange-lg': '0 8px 32px rgba(249,115,22,0.5)',
-        phone: '0 40px 80px -32px rgba(15,23,42,0.55)',
+        'cta-orange': '0 4px 20px rgba(182,227,109,0.45)',
+        'cta-orange-lg': '0 8px 32px rgba(182,227,109,0.55)',
+        phone: '0 40px 80px -32px rgba(16,41,30,0.55)',
       },
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(135deg, #1E3A8A 0%, #1E40AF 50%, #1D4ED8 100%)',
-        'section-gradient': 'linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%)',
-        'vendor-gradient': 'linear-gradient(135deg, #F97316 0%, #FB923C 100%)',
-        'navy-gradient': 'linear-gradient(135deg, #1E3A8A 0%, #1D4ED8 100%)',
+        'hero-gradient': 'linear-gradient(135deg, #10291E 0%, #173A2B 55%, #22503A 100%)',
+        'section-gradient': 'linear-gradient(180deg, #FBF8F1 0%, #EAF3EC 100%)',
+        'vendor-gradient': 'linear-gradient(135deg, #B6E36D 0%, #CDEB97 100%)',
+        'navy-gradient': 'linear-gradient(135deg, #173A2B 0%, #286447 100%)',
       },
       keyframes: {
         float: {

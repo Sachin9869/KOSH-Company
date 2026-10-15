@@ -22,7 +22,7 @@ export default function OpengraphImage() {
           flexDirection: 'column',
           justifyContent: 'center',
           padding: '0 88px',
-          background: 'linear-gradient(135deg, #1E3A8A 0%, #1E40AF 50%, #1D4ED8 100%)',
+          background: 'linear-gradient(135deg, #10291E 0%, #173A2B 55%, #22503A 100%)',
           fontFamily: 'sans-serif',
           position: 'relative',
         }}
@@ -36,7 +36,7 @@ export default function OpengraphImage() {
             width: 560,
             height: 560,
             borderRadius: 9999,
-            background: 'rgba(249,115,22,0.28)',
+            background: 'rgba(182,227,109,0.22)',
             filter: 'blur(90px)',
             display: 'flex',
           }}
@@ -49,7 +49,7 @@ export default function OpengraphImage() {
             width: 460,
             height: 460,
             borderRadius: 9999,
-            background: 'rgba(59,130,246,0.35)',
+            background: 'rgba(242,140,82,0.22)',
             filter: 'blur(90px)',
             display: 'flex',
           }}
@@ -57,15 +57,7 @@ export default function OpengraphImage() {
 
         {/* wordmark */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-          <span style={{ fontSize: 44, fontWeight: 800, color: '#fff', letterSpacing: -1 }}>K</span>
-          <svg width="44" height="52" viewBox="0 0 24 28" style={{ marginBottom: -6 }}>
-            <path
-              d="M12 27.2c0 0 10-10.8 10-16.1A10 10 0 1 0 2 11.1c0 5.3 10 16.1 10 16.1Z"
-              fill="#F97316"
-            />
-            <circle cx="12" cy="10.6" r="3.9" fill="#FFFFFF" />
-          </svg>
-          <span style={{ fontSize: 44, fontWeight: 800, color: '#fff', letterSpacing: -1 }}>SH</span>
+          <span style={{ fontSize: 44, fontWeight: 800, color: '#fff', letterSpacing: -1 }}>KOSH</span>
         </div>
 
         <div
@@ -88,7 +80,7 @@ export default function OpengraphImage() {
             fontWeight: 800,
             letterSpacing: -3,
             lineHeight: 1.05,
-            color: '#F97316',
+            color: '#B6E36D',
           }}
         >
           Buy Local.
@@ -109,7 +101,7 @@ export default function OpengraphImage() {
         </div>
 
         <div style={{ display: 'flex', marginTop: 48, gap: 14, alignItems: 'center' }}>
-          {['🇨🇦 Ontario, Canada', '⭐ 4.8 rating', '2,400+ local vendors'].map((chip) => (
+          {['🇨🇦 Ontario, Canada', 'Free to start', 'AI-written listings'].map((chip) => (
             <div
               key={chip}
               style={{

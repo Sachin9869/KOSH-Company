@@ -134,27 +134,27 @@ async function logLead(lead: VendorSignupInput, ip: string) {
 
 function vendorEmailHtml(lead: VendorSignupInput) {
   return `
-<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:520px;margin:0 auto;color:#0F172A">
-  <div style="background:linear-gradient(135deg,#1E3A8A 0%,#1D4ED8 100%);padding:32px 28px;border-radius:16px 16px 0 0">
+<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:520px;margin:0 auto;color:#173A2B">
+  <div style="background:linear-gradient(135deg,#173A2B 0%,#286447 100%);padding:32px 28px;border-radius:16px 16px 0 0">
     <p style="margin:0;font-size:22px;font-weight:800;color:#ffffff;letter-spacing:-0.5px">
-      K<span style="color:#F97316">O</span>SH
+      K<span style="color:#B6E36D">O</span>SH
     </p>
     <p style="margin:8px 0 0;font-size:14px;color:rgba(255,255,255,0.75)">Find Local. Buy Local.</p>
   </div>
-  <div style="border:1px solid #E2E8F0;border-top:0;border-radius:0 0 16px 16px;padding:28px">
+  <div style="border:1px solid #ECE7DC;border-top:0;border-radius:0 0 16px 16px;padding:28px">
     <h1 style="margin:0 0 12px;font-size:20px">Welcome, ${escapeHtml(lead.fullName)} 👋</h1>
-    <p style="margin:0 0 16px;font-size:15px;line-height:1.65;color:#475569">
+    <p style="margin:0 0 16px;font-size:15px;line-height:1.65;color:#4A5650">
       Thanks for putting <strong>${escapeHtml(lead.businessName)}</strong> on the KOSH vendor list.
       Someone from our Ontario team will reach out within 24 hours to get you set up.
     </p>
-    <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#0F172A">What you told us</p>
-    <table style="width:100%;font-size:13px;color:#475569;border-collapse:collapse">
+    <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#173A2B">What you told us</p>
+    <table style="width:100%;font-size:13px;color:#4A5650;border-collapse:collapse">
       ${row('Business', lead.businessName)}
       ${row('Type', lead.businessType)}
       ${row('City', lead.city)}
       ${row('Phone', lead.phone)}
     </table>
-    <p style="margin:20px 0 0;font-size:13px;color:#94A3B8">
+    <p style="margin:20px 0 0;font-size:13px;color:#8E9A93">
       Not expecting this email? Just ignore it and we won't contact you again.
     </p>
   </div>
@@ -178,10 +178,10 @@ function vendorEmailText(lead: VendorSignupInput) {
 
 function teamEmailHtml(lead: VendorSignupInput) {
   return `
-<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:520px;color:#0F172A">
+<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:520px;color:#173A2B">
   <h1 style="font-size:18px;margin:0 0 4px">New vendor lead</h1>
-  <p style="margin:0 0 16px;font-size:13px;color:#64748B">via kosh.ca vendor sign-up form</p>
-  <table style="width:100%;font-size:14px;color:#334155;border-collapse:collapse">
+  <p style="margin:0 0 16px;font-size:13px;color:#5F6C65">via kosh.ca vendor sign-up form</p>
+  <table style="width:100%;font-size:14px;color:#2A352E;border-collapse:collapse">
     ${row('Name', lead.fullName)}
     ${row('Business', lead.businessName)}
     ${row('Type', lead.businessType)}
@@ -207,7 +207,7 @@ function teamEmailText(lead: VendorSignupInput) {
 
 function row(label: string, value: string) {
   return `<tr>
-    <td style="padding:6px 12px 6px 0;color:#94A3B8;white-space:nowrap">${label}</td>
+    <td style="padding:6px 12px 6px 0;color:#8E9A93;white-space:nowrap">${label}</td>
     <td style="padding:6px 0;font-weight:500">${escapeHtml(value)}</td>
   </tr>`;
 }

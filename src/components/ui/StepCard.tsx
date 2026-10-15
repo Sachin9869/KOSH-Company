@@ -26,8 +26,8 @@ export function StepCard({ index, icon, title, body, tone }: StepCardProps) {
       <div className="relative">
         <span
           className={cn(
-            'relative z-10 flex h-14 w-14 items-center justify-center rounded-2xl text-white shadow-lg',
-            isNavy ? 'bg-navy shadow-navy/25' : 'bg-orange shadow-orange/30',
+            'relative z-10 flex h-14 w-14 items-center justify-center rounded-2xl shadow-lg',
+            isNavy ? 'bg-navy text-white shadow-navy/25' : 'bg-orange text-surface-dark shadow-orange/30',
           )}
         >
           <Icon name={icon} className="h-6 w-6" strokeWidth={2.2} />
