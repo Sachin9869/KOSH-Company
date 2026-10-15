@@ -8,7 +8,6 @@ import { NearbySection } from '@/components/sections/NearbySection';
 import { AppScreensSection } from '@/components/sections/AppScreensSection';
 import { CentralizedSection } from '@/components/sections/CentralizedSection';
 import { VendorSection } from '@/components/sections/VendorSection';
-import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 import { CommunitySection } from '@/components/sections/CommunitySection';
 import { FaqSection } from '@/components/sections/FaqSection';
 import { DownloadSection } from '@/components/sections/DownloadSection';
@@ -34,7 +33,7 @@ export default function HomePage() {
         <CentralizedSection />
         <AppScreensSection />
         <VendorSection />
-        <TestimonialsSection />
+        {/* Example stories (TestimonialsSection) return after launch, with real reviews. */}
         <CommunitySection />
         <FaqSection />
         <DownloadSection />

@@ -434,7 +434,6 @@ export const FOOTER_COLUMNS = [
     links: [
       { label: 'Start selling', href: '/#vendor-signup' },
       { label: 'Vendor app', href: '/#download' },
-      { label: 'Success stories', href: '/#testimonials' },
     ],
   },
   {
