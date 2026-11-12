@@ -25,7 +25,7 @@ export function TestimonialsSection() {
         <SectionHeading
           id="testimonials-heading"
           eyebrow="Example stories"
-          title="Made for local vendors and buyers"
+          title="Made for local sellers and buyers"
           subtitle="KOSH hasn't launched yet, so these are illustrative examples of what it's built to do — not reviews from real customers."
         />
       </div>

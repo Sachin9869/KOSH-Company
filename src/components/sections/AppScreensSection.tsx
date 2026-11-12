@@ -21,7 +21,7 @@ const VENDOR: { id: ScreenId; label: string }[] = [
   { id: 'vendor-create', label: 'Create with AI' },
 ];
 
-/** Real screenshots of both apps — the buyer app and KOSH Vendor. */
+/** Real screenshots of both apps — KOSH and KOSH Seller. */
 export function AppScreensSection() {
   return (
     <section id="app" className="overflow-hidden bg-white py-16 md:py-24" aria-labelledby="screens-heading">
@@ -74,7 +74,7 @@ export function AppScreensSection() {
             >
               <span className="inline-flex items-center gap-3">
                 <Image src="/brand/kosh-vendor-mark.png" alt="" width={44} height={43} />
-                <span className="text-h4 text-white">KOSH Vendor</span>
+                <span className="text-h4 text-white">KOSH Seller</span>
               </span>
               <h3 className="mt-6 max-w-md text-balance text-h2-sm text-white md:text-h2">
                 Run your shop from <span className="text-orange">one screen.</span>

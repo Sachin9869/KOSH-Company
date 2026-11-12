@@ -21,7 +21,7 @@ export function VendorSignupSection() {
             viewport={VIEWPORT}
             variants={fadeLeft}
           >
-            <p className="section-eyebrow text-orange-ink">For vendors</p>
+            <p className="section-eyebrow text-orange-ink">For sellers</p>
             <h2 id="signup-heading" className="mt-3 text-balance text-h1-sm text-ink md:text-h1">
               Start selling in your neighbourhood today.
             </h2>

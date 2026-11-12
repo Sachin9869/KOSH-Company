@@ -94,7 +94,7 @@ async function sendEmails(lead: VendorSignupInput) {
     resend.emails.send({
       from: FROM_EMAIL,
       to: lead.email,
-      subject: "You're on the KOSH vendor list 🎉",
+      subject: "You're on the KOSH seller list 🎉",
       html: vendorEmailHtml(lead),
       text: vendorEmailText(lead),
     }),
@@ -144,7 +144,7 @@ function vendorEmailHtml(lead: VendorSignupInput) {
   <div style="border:1px solid #ECE7DC;border-top:0;border-radius:0 0 16px 16px;padding:28px">
     <h1 style="margin:0 0 12px;font-size:20px">Welcome, ${escapeHtml(lead.fullName)} 👋</h1>
     <p style="margin:0 0 16px;font-size:15px;line-height:1.65;color:#4A5650">
-      Thanks for putting <strong>${escapeHtml(lead.businessName)}</strong> on the KOSH vendor list.
+      Thanks for putting <strong>${escapeHtml(lead.businessName)}</strong> on the KOSH seller list.
       Someone from our Ontario team will reach out within 24 hours to get you set up.
     </p>
     <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#173A2B">What you told us</p>
@@ -165,7 +165,7 @@ function vendorEmailText(lead: VendorSignupInput) {
   return [
     `Welcome, ${lead.fullName}!`,
     '',
-    `Thanks for putting ${lead.businessName} on the KOSH vendor list. Someone from our Ontario team will reach out within 24 hours.`,
+    `Thanks for putting ${lead.businessName} on the KOSH seller list. Someone from our Ontario team will reach out within 24 hours.`,
     '',
     `Business: ${lead.businessName}`,
     `Type: ${lead.businessType}`,

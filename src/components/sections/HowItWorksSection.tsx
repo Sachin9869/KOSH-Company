@@ -13,7 +13,7 @@ type Audience = 'buyer' | 'vendor';
 
 const TABS: { id: Audience; label: string }[] = [
   { id: 'buyer', label: "I'm a Buyer" },
-  { id: 'vendor', label: "I'm a Vendor" },
+  { id: 'vendor', label: "I'm a Seller" },
 ];
 
 export function HowItWorksSection() {

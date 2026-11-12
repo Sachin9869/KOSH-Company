@@ -28,7 +28,7 @@ export const SOCIAL_LINKS = [
 
 export const NAV_LINKS = [
   { label: 'How it works', href: '#how-it-works' },
-  { label: 'For vendors', href: '#for-vendors' },
+  { label: 'For sellers', href: '#for-vendors' },
   { label: 'Download', href: '#download' },
 ] as const;
 
@@ -107,7 +107,7 @@ export const FEATURES: readonly Feature[] = [
     tone: 'blue',
     title: 'AI writes your listing',
     body: 'Snap a photo and let KOSH AI generate your title, description, and price suggestion. Live in 60 seconds.',
-    badge: 'Vendor feature',
+    badge: 'Seller feature',
     badgeTone: 'orange',
   },
   {
@@ -128,14 +128,14 @@ export const FEATURES: readonly Feature[] = [
     icon: 'CreditCard',
     tone: 'navy',
     title: 'Secure CAD payments',
-    body: 'Pay and receive payments in CAD via Stripe. Vendors get paid directly — no waiting.',
+    body: 'Pay and receive payments in CAD via Stripe. Sellers get paid directly — no waiting.',
   },
   {
     icon: 'LayoutGrid',
     tone: 'orange',
     title: 'Single ad, service, or full store',
     body: 'Post a yard sale item, offer your services with a booking calendar, or open a complete digital store — all in one app.',
-    badge: 'Vendor feature',
+    badge: 'Seller feature',
     badgeTone: 'orange',
   },
   {
@@ -402,7 +402,7 @@ export const VENDOR_BENEFIT_LIST = [
   'Appear in local search immediately',
   'Secure CAD payments via Stripe',
   'Your own store page at kosh.ca/store/you',
-  'iOS and Android vendor app',
+  'The KOSH Seller app for iOS and Android',
 ] as const;
 
 export const BUSINESS_TYPES = [
@@ -430,10 +430,10 @@ export const FOOTER_COLUMNS = [
     ],
   },
   {
-    title: 'For vendors',
+    title: 'For sellers',
     links: [
       { label: 'Start selling', href: '/#vendor-signup' },
-      { label: 'Vendor app', href: '/#download' },
+      { label: 'KOSH Seller app', href: '/#download' },
     ],
   },
   {
