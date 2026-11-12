@@ -7,8 +7,8 @@ export const SCREENS = {
   'buyer-search': 'KOSH search results for “fresh”: tutoring, sweets, lawn care and farm vegetables',
   'buyer-product': 'A sourdough boule from Amara’s Bakehouse, with Add to Cart and Buy now',
   'buyer-store': 'Fresh Farm’s storefront: rating, opening hours and its vegetables',
-  'vendor-home': 'KOSH Vendor home for Amara’s Bakehouse: Quick Post, New product and workspace',
-  'vendor-create': 'KOSH Vendor create screen: Create with AI or fill it in yourself',
+  'vendor-home': 'KOSH Seller home for Amara’s Bakehouse: Quick Post, New product and workspace',
+  'vendor-create': 'KOSH Seller create screen: Create with AI or fill it in yourself',
 } as const;
 
 export type ScreenId = keyof typeof SCREENS;

@@ -38,8 +38,9 @@ export function DownloadSection() {
               in your pocket.
             </h2>
             <p className="mx-auto mt-5 max-w-md text-pretty text-body-lg text-white/80 lg:mx-0">
-              Available on iOS and Android. Browse, discover, and connect with local businesses
-              around you.
+              Available on iOS and Android. Get <strong className="text-white">KOSH</strong> to
+              browse, order and book from local businesses around you, or{' '}
+              <strong className="text-white">KOSH Seller</strong> to sell on KOSH.
             </p>
 
             <StoreBadgeRow theme="light" className="mt-8 justify-center lg:justify-start" />
